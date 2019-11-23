@@ -1,0 +1,22 @@
+steps:
+  - name: session_token
+    description: Obtaining BoltTrain token with bolt_train::session_token plan.
+    plan: bolt_train::session_token
+    parameters:
+      email: cas.donoghue@puppet.com
+      targets: bolt-train
+  - name: forward
+    description: Move train forward with the bolt_train::move task. 
+    task: bolt_train::move
+    target: bolt-train
+    parameters:
+      token: $session_token
+      direction: forward
+      speed: 10
+      time: 15
+  - name: run
+    description: Deploy my plan to the train!
+    task: bolt_train::run
+    target: bolt-train
+    parameters:
+      token: $session_token

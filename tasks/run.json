@@ -1,0 +1,12 @@
+{
+  "description": "Deploy train plan",
+  "remote": true,
+  "files": ["ruby_task_helper/files/task_helper.rb", "bolt_train/lib/request_helper.rb"],
+  "input_method": "stdin",
+  "parameters": {
+    "token": {
+      "type": "String[1]",
+      "description": "Auth token"
+    }
+  }
+}
