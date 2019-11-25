@@ -1,0 +1,10 @@
+version: "3"
+services:
+  train:
+    container_name: train
+    image: pcr-internal.puppet.net/dimitri.tischenko/bolt-train-api:latest
+    network_mode: host
+    volumes:
+      - /tmp/bolt-train-queue:/bolt-train-queue
+    ports:
+      - "5000:5000"

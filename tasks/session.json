@@ -1,0 +1,12 @@
+{
+  "description": "Request Bolt Train session key",
+  "remote": true,
+  "files": ["ruby_task_helper/files/task_helper.rb", "bolt_train/lib/request_helper.rb"],
+  "input_method": "stdin",
+  "parameters": {
+    "email": {
+      "type": "String[1]",
+      "description": "Email address to log in with."
+    }
+  }
+}

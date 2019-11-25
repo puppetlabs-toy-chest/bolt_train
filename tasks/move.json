@@ -1,0 +1,24 @@
+{
+  "description": "Move Bolt Train",
+  "remote": true,
+  "files": ["ruby_task_helper/files/task_helper.rb", "bolt_train/lib/request_helper.rb"],
+  "input_method": "stdin",
+  "parameters": {
+    "token": {
+      "type": "String[1]",
+      "description": "Auth token"
+    },
+    "direction": {
+      "type": "Enum['forward', 'reverse']",
+      "description": "Direction to move train, acceptable values 'forward', 'reverse'"
+    },
+    "time": {
+      "type": "Integer[1, 30]",
+      "description": "Time in seconds for movement"
+    },
+    "speed": {
+      "type": "Integer[1, 10]",
+      "description": "Speed of movement"
+    }
+  }
+}
