@@ -95,4 +95,4 @@ Finished: plan train_route::myplan in 0.69 sec
 Plan completed successfully with no result
 ```
 
-## Compose your own plans and extent the tasks!
+## Compose your own plans and extend the tasks!
